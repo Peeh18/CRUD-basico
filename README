@@ -1,0 +1,49 @@
+# Projeto CRUD
+
+Este é um projeto de exemplo que implementa operações CRUD (Create, Read, Update, Delete) usando JavaScript.
+
+## Tecnologias Utilizadas
+
+- JavaScript
+
+## Funcionalidades
+
+### CREATE
+A função `criaPost(dados)` adiciona um novo post à lista de posts. Ela recebe um objeto `dados` contendo o `owner` e o `content` do post.
+
+### READ
+A função `pegaPosts()` retorna a lista de posts.
+
+### UPDATE
+A função `atualizaContentDoPost(id, novoConteudo)` atualiza o conteúdo de um post existente. Ela recebe o `id` do post a ser atualizado e o `novoConteudo`.
+
+### DELETE
+A função `apagaPost(id)` remove um post da lista de posts. Ela recebe o `id` do post a ser removido.
+
+## Exemplo de Uso
+
+```javascript
+// Criando novos posts
+criaPost({ owner: 'ph', content: 'Segunda publicação' });
+criaPost({ owner: 'ph', content: 'Terceira publicação' });
+criaPost({ owner: 'ph', content: 'Publicação teste' });
+
+// Lendo todos os posts
+console.log(pegaPosts());
+
+// Atualizando o conteúdo de um post
+atualizaContentDoPost(3, 'Novo conteúdo da publicação');
+console.log(pegaPosts());
+
+// Deletando um post
+apagaPost(1);
+console.log(pegaPosts());
+```
+
+## Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
